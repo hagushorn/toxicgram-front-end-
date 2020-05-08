@@ -12,7 +12,7 @@
         <div class="row vh-100 ">
             <div class="col-2 "></div>
 
-            <div class="col-2 border-right border-left border-top  border-success border-2 messBG my-3">
+            <div class="col-2 border-right border-left border-top  border-success border-2 messBG">
                 <!-- Поиск пользователей -->
                 <div class="row d-flex flex-column justify-content-center text-center" style = "height: 10%;">
                     <div class="col border-bottom border-success border-2 pt-2">
@@ -25,26 +25,27 @@
 
                 <!-- Область названий бесед -->
                 <div class="row " style = "height: 80%;">
-                    <div class="col border-bottom border-success border-2 overflow-auto" >
+                    <div class="col border-bottom border-success border-2 overflow" >
 
-                        <div class="row row-10">
-                            <div class="col ">
-                                <form action="">
-                                    <button type="submit" class = "btn btn-outline-success w-100 mt-2 text-left text-truncate">
-                                        Стасссссссссссссссссссссссссссссссссссссссссссссссссссссс
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row row-10">
+                        <!-- Блок беседы, используй btn-success, чорт -->
+                        <div class="row row-14">
                             <div class="col">
                                 <form action="">
-                                    <button type="submit" class = "btn btn-outline-success w-100 mt-2 text-left text-truncate">
-                                        Жопа
+                                    <button type="submit" class = "btn btn-outline-success w-100 mt-2">
+                                        <div class="text-left">
+                                            <div class="d-block font-weight-bold text-truncate">
+                                                Стасссссссссссссссссссссссссссссссссссссссссссссссссссссс
+                                            </div>
+                                            <div class="d-block text-truncate">
+                                                <span class="badge badge-success">Стас: </span>
+                                                <span>ssssssssssssssssssssssssssssssssssssssssssssssssssssssss</span>
+                                            </div>
+                                        </div>
                                     </button>
                                 </form>
                             </div>
                         </div>
+                        <!-- Блок беседы, используй btn-success, чорт -->
 
                     </div>
                 </div>
@@ -59,20 +60,37 @@
                 <!-- Профиль -->
 
             </div>
-            <div class="col-6 border-right border-top border-success border-2 messBG my-3">
+            <div class="col-6 border-right border-top border-success border-2 messBG">
                 <!-- Название беседы -->
                 <div class="row" style = "height: 10%;">
-                    <div class="col border-bottom border-success border-2" >
-                        <h5 class="white-text mt-3">
+                    <div class="col-8 border-bottom border-success border-2" >
+                        <h5 class="white-text mt-3 text-truncate">
                             Название беседы
                         </h5>
+                    </div>
+                    <div class="col-4 border-bottom border-success border-2">
+                        <div class="dropleft">
+                            <i class="fas fa-ellipsis-h fa-2x float-right mt-3 drop" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Добавить собеседника</a>
+                                <a class="dropdown-item" href="#">Что то еще</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Название беседы -->
 
                 <!-- Область сообщений -->
                 <div class="row" style = "height: 80%;"> 
-                    <div class="col border-bottom border-success border-2 overflow-auto">
+                    <div class="col border-bottom border-success border-2 d-flex flex-column-reverse overflow">
+                        <!-- Форма сообщения -->
+                        <div class="row mb-2 word-wrap w-60">
+                            <div class="col">
+                                <span class="badge badge-success font-weight-bold">Эрнест</span>
+                                <span>Стас лоооооох, сасииииииииии со своим фротендом</span>
+                            </div>
+                        </div>
+                        <!-- Форма сообщения -->
                     </div>
                 </div>
                 <!-- Область сообщений -->
@@ -86,9 +104,8 @@
                     </div>
                 </div>
                 <!-- Область ввода текста -->
-
             </div>
-            
+
             <div class="col-2 "></div>
         </div>
     </div>

@@ -20,12 +20,37 @@ body
     border-width:2px !important;
 }
 
-.row-10
+.row-14
 {
-    height: 10%;
+    height: 14%;
+}
+.row-auto
+{
+    height: 50%;
 }
 
 .btn-outline-success
 {
     color:white;
+}
+
+.word-wrap
+{
+    word-wrap: break-word;
+}
+
+.w-60
+{
+    width: 60%;
+}
+.overflow
+{
+    overflow-y: scroll;
+    height: 100%;
+}
+.overflow::-webkit-scrollbar { width: 0; }
+
+.drop:hover
+{
+    color:rgb(49, 197, 49);
 }
