@@ -8,6 +8,40 @@
     <title>Диалоги</title>
 </head>
 <body>
+    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" >
+          <div class="modal-content" style="color:white;background: rgb(61, 61, 61);">
+            <div class="modal-body">
+              <div class="row justify-content-center ">
+                <div class="col-10 ">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="modal-title">Выберите собеседников</h5>
+                    </div>
+                  </div>
+                  <form>
+                    <div class="row">
+                        <div class="col py-2">  
+                            <label for="selectUsers">Выберите пользователя/ей</label>
+                            <select multiple class="form-control" id="selectUsers" style="color:white;background: rgb(61, 61, 61);">
+                                <option>1</option>
+                                <option>2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row float-right">
+                      <div class="col">
+                        <button type="submit" class="btn btn-success ">Подтвердить</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
     <div class="container-fluid">
         <div class="row vh-100 ">
             <div class="col-2 "></div>
@@ -72,7 +106,7 @@
                         <div class="dropleft">
                             <i class="fas fa-ellipsis-h fa-2x float-right mt-3 drop" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Добавить собеседника</a>
+                                <a class="dropdown-item"role="button" data-toggle="modal" data-target=".bd-example-modal-sm" href="#">Добавить собеседника</a>
                                 <a class="dropdown-item" href="#">Что то еще</a>
                             </div>
                         </div>
