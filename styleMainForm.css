@@ -50,7 +50,21 @@ body
 }
 .overflow::-webkit-scrollbar { width: 0; }
 
+.drop
+{
+    color:white;
+}
 .drop:hover
 {
-    color:rgb(49, 197, 49);
+    color:#218838;
+    /* rgb(49, 197, 49) */
+}
+.dropItem
+{
+    color:white;
+}
+.dropItem:hover
+{
+    background-color:#218838;
+    color:white;
 }
